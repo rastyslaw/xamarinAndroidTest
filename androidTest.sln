@@ -1,0 +1,18 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "androidTest", "androidTest.csproj", "{EF4086FF-A4DD-452B-B9FC-29950CF33CBF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EF4086FF-A4DD-452B-B9FC-29950CF33CBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF4086FF-A4DD-452B-B9FC-29950CF33CBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF4086FF-A4DD-452B-B9FC-29950CF33CBF}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{EF4086FF-A4DD-452B-B9FC-29950CF33CBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF4086FF-A4DD-452B-B9FC-29950CF33CBF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF4086FF-A4DD-452B-B9FC-29950CF33CBF}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
