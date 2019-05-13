@@ -15,13 +15,14 @@ namespace androidTest
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
-            // Set our view from the "main" layout resource
+            // Set our view from the "main" layout resourcePublishDir
             SetContentView(Resource.Layout.activity_main);
             
             var phoneNumberText = FindViewById<EditText>(Resource.Id.PhoneNumberText);
             var translatedPhoneWord = FindViewById<TextView>(Resource.Id.TranslatedPhoneword);
             var translateButton = FindViewById<Button>(Resource.Id.TranslateButton);
             var translationHistoryButton = FindViewById<Button> (Resource.Id.TranslationHistoryButton);
+            var mapButton = FindViewById<Button> (Resource.Id.MapButton);
             
             translateButton.Click += (sender, e) =>
             {
@@ -44,6 +45,11 @@ namespace androidTest
                 var intent = new Intent(this, typeof(TranslationHistoryActivity));
                 intent.PutStringArrayListExtra("phone_numbers", phoneNumbers);
                 StartActivity(intent);
+            };
+            
+            mapButton.Click += (sender, e) =>
+            {
+                StartActivity(typeof(MapActivity));
             };
         }
     }

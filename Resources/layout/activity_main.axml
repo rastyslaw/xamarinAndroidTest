@@ -34,4 +34,9 @@
             android:layout_height="wrap_content" android:layout_alignParentStart="true"
             android:layout_below="@+id/TranslatedPhoneword" android:id="@+id/TranslationHistoryButton"
             android:enabled="false" android:text="@string/translationHistory"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_alignParentStart="true"
+            android:layout_below="@+id/TranslationHistoryButton" android:id="@+id/MapButton"
+            android:text="@string/map"/>
 </RelativeLayout>

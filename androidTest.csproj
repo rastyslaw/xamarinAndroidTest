@@ -57,6 +57,7 @@
   <ItemGroup>
     <Compile Include="Core\PhonewordTranslator.cs" />
     <Compile Include="MainActivity.cs" />
+    <Compile Include="MapActivity.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TranslationHistoryActivity.cs" />
@@ -70,6 +71,10 @@
     <AndroidResource Include="Resources\layout\activity_main.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
+    <AndroidResource Include="Resources\layout\activity_map.axml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
+    </AndroidResource>
     <AndroidResource Include="Resources\mipmap-hdpi\Icon.png" />
     <AndroidResource Include="Resources\mipmap-mdpi\Icon.png" />
     <AndroidResource Include="Resources\mipmap-xhdpi\Icon.png" />
@@ -82,6 +87,10 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Xamarin.Android.Support.Design" Version="27.0.2.1" />
+    <PackageReference Include="Xamarin.GooglePlayServices.Base" Version="60.1142.1" />
+    <PackageReference Include="Xamarin.GooglePlayServices.Basement" Version="60.1142.1" />
+    <PackageReference Include="Xamarin.GooglePlayServices.Maps" Version="60.1142.1" />
+    <PackageReference Include="Xamarin.GooglePlayServices.Tasks" Version="60.1142.1" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
